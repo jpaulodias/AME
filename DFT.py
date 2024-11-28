@@ -3,7 +3,9 @@
 @autor: jpdsp
 24.11.21
 
-Aplicação do algoritmo da transformada rápida de Fourier em um sinal temporal.
+Aplicação da transformada discreta de Fourier (DFT) em um sinal temporal.
+O algoritmo da transformada rápida de Fourier (FFT) pode ser utilizado caso
+o número de amostras seja uma potência de 2 (N = 2^k, k = 1, 2, 3...).
 
 """
 
@@ -102,7 +104,7 @@ def fft(x):
 
 
 def PSD(data, T):
-    # Converte a transformada discreta de Fourier para densidade espectral.
+    # Converte a transformada de Fourier para densidade espectral.
 
     x = data[1]
 
